@@ -1,0 +1,19 @@
+<html>
+<head><title>Form Test</title></head>
+<body>
+<form id="myForm">
+  <input name="email" type="email" placeholder="Email" required>
+  <input name="name" placeholder="Name" required>
+  <button type="submit">Submit</button>
+</form>
+<div id="result"></div>
+
+<script>
+  document.getElementById('myForm').addEventListener('submit', function(e) {
+    e.preventDefault();
+    document.getElementById('result').textContent = 'Form submitted successfully!';
+    // Normally this would POST to a server
+  });
+</script>
+</body>
+</html>
